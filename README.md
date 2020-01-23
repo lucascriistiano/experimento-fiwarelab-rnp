@@ -19,6 +19,8 @@ Em adição, para conexão com tais serviços, já são fornecidas algumas inst�
     
 Os componentes FIWARE necessários para a execução da tarefa podem ser visualizados na imagem abaixo, que apresenta a arquitetura e a forma de conexão desses componentes:
 
+![Arquitetura de componentes FIWARE da aplicação](/images/application-fiware-architecture.png)
+
 
 ## Configuração da aplicação
   
