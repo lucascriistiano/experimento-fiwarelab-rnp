@@ -4,7 +4,6 @@ A atividade proposta no experimento consiste na configuração de um ambiente co
 
 Alguns dispositivos estão instalados em cada sala e são responsáveis por monitorar variáveis do ambiente como **temperatura**, **umidade**, **se há ocupação**, **número de pessoas**,  bem como **enviar comandos para controle de um aparelho de ar condicionado** instalado em cada sala.
 
-
 ## Configuração de ambiente
 
 Para dar suporte a tal aplicação, é necessário inicialmente configurar o conjunto de serviços FIWARE necessário às funcionalidades da aplicação. São esses serviços:
@@ -152,3 +151,9 @@ Para a realização das tarefas, a documentação e guias oficiais do FIWARE pod
 [203. IoT over MQTT](https://github.com/FIWARE/tutorials.IoT-over-MQTT)
 
 [301. Persisting Context Data using Apache Flume (MongoDB, MySQL, PostgreSQL](https://github.com/FIWARE/tutorials.Historic-Context-Flume)
+
+## Formulário Final
+
+Ao final da realização das atividades, favor responder o link em anexo para finalização da participação no experimento:
+
+[Link do formulário do experimento](https://forms.gle/Ue8zNDk7XPC98Gxu9)
