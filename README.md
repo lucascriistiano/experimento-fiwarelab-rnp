@@ -47,8 +47,13 @@ As informações detalhadas dos itens a serem criados são detalhadas na tabela 
 
 ### Serviço
 
-- name: IMDService
-- path: /imd
+- name: FiwareLab[SeuPrimeiroNome]
+- path: /fiwarelab[seuPrimeiroNome]
+
+Ex:
+- name: FiwareLabLucas
+- path: /fiwarelablucas
+	
 
 ### Entidades
 
