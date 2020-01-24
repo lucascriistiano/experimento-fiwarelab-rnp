@@ -172,6 +172,10 @@ Para a realização das tarefas, a documentação e guias oficiais do FIWARE pod
 
 [301. Persisting Context Data using Apache Flume (MongoDB, MySQL, PostgreSQL](https://github.com/FIWARE/tutorials.Historic-Context-Flume)
 
+### Apresentação Inicial
+
+[Link do slide deck](https://docs.google.com/presentation/d/1z12i_1Q1VeE6ArRoQKHPEwerTHa4n-zATfCSSQd_pU4/edit?usp=sharing)
+
 ## Formulário Final
 
 Ao final da realização das atividades, favor responder o link em anexo para finalização da participação no experimento:
