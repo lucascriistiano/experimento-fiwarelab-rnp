@@ -21,28 +21,36 @@ Os componentes FIWARE necessários para a execução da tarefa podem ser visuali
 
 ![Arquitetura de componentes FIWARE da aplicação](/images/application-fiware-architecture.png)
 
+Uma sugestão de ordem de configuração dos componentes do ambiente é:
+
+- Executar instância de banco de dados MongoDB (utilizada pelo Orion e IoT-Agent)
+- Executar instância de Orion Context Broker, conectado ao MongoDB
+- Executar instância de broker MQTT
+- Executar instância de IoT-Agent Ultra Light, conectado ao MongoDB e ao broker MQTT
+- Executar instância de PostgreSQL
+- Executar instância de Cygnus, conectado ao Orion Context Broker e PostgreSQL
+
 
 ## Configuração da aplicação
   
-  Uma vez que os serviços se encontrem em execução, para fornecer o suporte à aplicação, os seguintes itens devem ser configurados em seus respectivos componentes:
+Uma vez que os serviços se encontrem em execução, para fornecer o suporte à aplicação, os seguintes itens devem ser configurados em seus respectivos componentes:
 
-- Criar serviço para a aplicação
+- Criar serviço para entidades e dispositivos da aplicação
 
 Em seguida, no serviço criado:
 
-- Criar entidade da sala monitorada
+- Criar entidade da sala monitorada 
 - Criar dispositivos (sensores e atuador) associados à sala monitorada
-- Criar subscrição para persistência de dados do sensor de temperatura (temp001)
+- Criar subscrição no Orion Context Broker para persistência de dados do sensor de temperatura (temp001) no Cygnus
 
 As informações detalhadas dos itens a serem criados são detalhadas na tabela abaixo:
 
 ### Serviço
+
 - name: IMDService
 - path: /imd
-  
 
 ### Entidades
-    
 
 **urn:ngsi-ld:Room:001**
 - ID: urn:ngsi-ld:Room:001
@@ -144,13 +152,23 @@ Para a realização das tarefas, a documentação e guias oficiais do FIWARE pod
 
 [Step-by-Step Guide](https://github.com/FIWARE/tutorials.Step-by-Step)
 
+### Context Entities and Subscriptions
+
 [101. Getting Started](https://github.com/FIWARE/tutorials.Getting-Started)
+
 [103. CRUD Operations](https://github.com/FIWARE/tutorials.CRUD-Operations)
+
 [106. Subscribing to Changes in Context](https://github.com/FIWARE/tutorials.Subscriptions)
 
+### Devices
+
 [201. Introduction to IoT Sensors](https://github.com/FIWARE/tutorials.IoT-Sensors)
+
 [202. Provisioning an IoT Agent](https://github.com/FIWARE/tutorials.IoT-Agent)
+
 [203. IoT over MQTT](https://github.com/FIWARE/tutorials.IoT-over-MQTT)
+
+### Data persistance
 
 [301. Persisting Context Data using Apache Flume (MongoDB, MySQL, PostgreSQL](https://github.com/FIWARE/tutorials.Historic-Context-Flume)
 
